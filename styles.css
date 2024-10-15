@@ -1,117 +1,116 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #23696b;
-    color: #000000;
+    font-family: Arial, sans-serif; /* Set the font for the entire document */
+    line-height: 1.6; /* Set line height for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #23696b; /* Set background color */
+    color: #000000; /* Set text color */
 }
 
 header {
-    background: #000000;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    background: #000000; /* Set header background color */
+    color: #fff; /* Set header text color */
+    padding: 20px 20px; /* Set padding for header */
+    text-align: center; /* Center-align text in header */
 }
 
 header h1 {
-    margin: 0;
+    margin: 0; /* Remove default margin for h1 */
 }
 
 header h2 {
-    margin: 10px 0;
-    font-weight: normal;
+    margin: 10px 0; /* Add margin for h2 */
+    font-weight: normal; /* Set font weight for h2 */
 }
 
 nav ul {
-    list-style: none;
-    padding: 100;
-    display: flex;
-    justify-content: center;
+    list-style: none; /* Remove bullet points from list */
+    padding: 100; /* Note: This seems incorrect, should be padding: 0; */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center navigation items */
 }
 
 nav ul {
-    display: inline;
-    margin: 0 15px;
+    display: inline; /* Inline display for list items */
+    margin: 0 15px; /* Add margin between items */
 }
-
-
 
 nav ul a {
-    color: #00ffdd;
-    text-decoration: none;
-    font-weight: bold;
-    
+    color: #00ffdd; /* Set link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make links bold */
 }
 
+/* Hover effect for navigation links (commented out) */
 /* nav ul a:hover {
-    text-decoration: underline;
+    text-decoration: underline; 
 } */
 
 /* Main Styles */
 main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Set padding for main content */
+    max-width: 800px; /* Limit maximum width */
+    margin: 20px auto; /* Center main content */
+    background: #fff; /* Set background color for main content */
+    border-radius: 8px; /* Round corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Add space between sections */
 }
 
 h3 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+    border-bottom: 2px solid #333; /* Underline for h3 headings */
+    padding-bottom: 10px; /* Add padding below heading */
 }
 
 h4 {
-    margin-top: 10px;
-    color: #666;
-    font-weight:bold;
-    font-size: large;
+    margin-top: 10px; /* Margin above h4 */
+    color: #666; /* Set color for h4 */
+    font-weight: bold; /* Make h4 bold */
+    font-size: large; /* Set font size for h4 */
 }
 
 h5 {
-    margin-top: 5px;
-    font-weight: bold;
-    font-size: large;
+    margin-top: 5px; /* Margin above h5 */
+    font-weight: bold; /* Make h5 bold */
+    font-size: large; /* Set font size for h5 */
 }
+
 h6 {
-    margin-top: 5px;
-    font-weight: bold;
-    font-size: 0;
+    margin-top: 5px; /* Margin above h6 */
+    font-weight: bold; /* Make h6 bold */
+    font-size: large; /* Set font size for h6 */
+    color: #333; /* Set color for h6 */
 }
 
 ul {
-    padding-left: 20px;
+    padding-left: 20px; /* Indent unordered list */
 }
 
 ul li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Space between list items */
 }
 
 /* Image Styles */
 #about img,
 #skills img,
 #experience img {
-    max-width: 50%; /* Set image width to 50% */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
+    max-width: 50%; /* Set maximum width of images to 50% */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Display as block element */
+    margin: 0 auto; /* Center images */
+    border-radius: 8px; /* Round corners of images */
 }
-
 
 /* Footer Styles */
 footer {
-    background: #000000;
-    color: #fff;
-    padding: 10px 0; /* Reduced padding */
-    display: flex;
+    background: #000000; /* Set footer background color */
+    color: #fff; /* Set footer text color */
+    padding: 10px 20px; /* Set padding for footer */
+    display: flex; /* Use flexbox for layout */
     justify-content: space-between; /* Space between items */
     align-items: center; /* Center items vertically */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
@@ -120,60 +119,63 @@ footer {
 footer section {
     flex: 1; /* Allow sections to take available space */
     text-align: center; /* Center text for social links */
+    justify-content: space-between; /* Space between items in footer sections */
 }
 
 footer #contact {
     text-align: left; /* Align contact info to the left */
+    justify-content: space-between; /* Space between items */
 }
 
 footer #references {
     text-align: right; /* Align references to the right */
+    justify-content: space-between; /* Space between items */
 }
 
 footer h3 {
-    margin-top: 0;
+    margin-top: 0; /* Remove margin above h3 in footer */
 }
 
 footer ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Remove bullet points from footer lists */
+    padding: 0; /* Remove padding */
 }
 
 footer ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Space between footer list items */
 }
 
 footer ul li a {
-    font-weight: bold;
-    color: #00ffdd;
+    font-weight: bold; /* Make footer links bold */
+    color: #00ffdd; /* Set color for footer links */
 }
 
 /* Responsive Styles */
 @media (max-width: 600px) {
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        display: block; /* Stack navigation items vertically on small screens */
+        margin: 10px 0; /* Add margin between items */
     }
 
     header {
-        padding: 15px 0;
+        padding: 15px 0; /* Adjust header padding for small screens */
     }
 
     main {
-        padding: 15px;
+        padding: 15px; /* Adjust main content padding for small screens */
     }
 
     footer {
-        flex-direction: column; /* Stack items vertically on small screens */
+        flex-direction: column; /* Stack footer items vertically */
         align-items: flex-start; /* Align items to the left */
     }
 
     footer section {
-        width: 100%; /* Make sections full-width */
+        width: 100%; /* Make footer sections full-width */
         text-align: left; /* Align all text to the left */
     }
 
     footer #socials {
-        text-align: center; /* Center socials on small screens */
+        text-align: center; /* Center social links on small screens */
     }
 }
