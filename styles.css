@@ -1,134 +1,138 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #23696b;
-    color: #000000;
+    font-family: Arial, sans-serif; /* Set the font for the entire document */
+    line-height: 1.6; /* Increase line height for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #23696b; /* Set background color */
+    color: #000000; /* Set text color */
 }
 
 header {
-    background: #000000;
-    color: #fff;
-    padding: 20px 20px;
-    text-align: center;
+    background: #000000; /* Background color for header */
+    color: #fff; /* Text color for header */
+    padding: 20px 20px; /* Padding around header content */
+    text-align: center; /* Center align text in header */
 }
 
-.center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Centering utility for flexbox */
+.center {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
 }
 
+/* Title styles in header */
 header h1 {
-    margin: 0;
-    font-family: monospace;
-    white-space: nowrap;
-    overflow: hidden; /* Ensures the text doesn't wrap */
-    border-right: 4px solid; /* Cursor effect */
-    width: 22ch; /* Adjust this based on the longest text */
-    animation: caret-blink 0.75s step-end infinite;
-    text-align: center;
+    margin: 0; /* Remove default margin */
+    font-family: monospace; /* Use monospace font for typewriter effect */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Ensure the text doesn't overflow */
+    border-right: 4px solid; /* Cursor effect for typewriter */
+    width: 22ch; /* Limit width based on character count */
+    animation: caret-blink 0.75s step-end infinite; /* Animation for blinking cursor */
+    text-align: center; /* Center align the title */
 }
 
 header h2 {
-    margin: 10px 0;
-    font-weight: normal;
+    margin: 10px 0; /* Margin for the subtitle */
+    font-weight: normal; /* Normal font weight for the subtitle */
 }
 
+/* Navigation styles */
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for navigation */
+    justify-content: center; /* Center nav items */
+}
+nav ul a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #fff; /* Change color on hover */
 }
 
+nav ul a:hover {
+    background-color: rgba(0, 255, 221, 0.2); /* Example background color */
+    border-radius: 4px; /* Rounded corners on hover */
+}
+/* Inline navigation items */
 nav ul {
-    display: inline;
-    margin: 0 15px;
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Margin between links */
 }
-
-
 
 nav ul a {
-    color: #00ffdd;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 30px;
-    /* justify-content:; */
-    
+    color: #00ffdd; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold font for links */
+    padding: 30px; /* Padding around links */
 }
-
-/* nav ul a:hover {
-    text-decoration: underline;
-} */
 
 /* Main Styles */
 main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Padding around main content */
+    max-width: 800px; /* Max width for main content */
+    margin: 20px auto; /* Center main content with margin */
+    background: #fff; /* Background color for main content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Space between sections */
 }
 
 h3 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+    border-bottom: 2px solid #333; /* Bottom border for section titles */
+    padding-bottom: 10px; /* Padding below section titles */
 }
 
 h4 {
-    margin-top: 10px;
-    color: #666;
-    font-weight:bold;
-    font-size: large;
+    margin-top: 10px; /* Margin above h4 elements */
+    color: #666; /* Color for h4 elements */
+    font-weight: bold; /* Bold font for h4 elements */
+    font-size: large; /* Large font size for h4 elements */
 }
 
 h5 {
-    margin-top: 5px;
-    font-weight: bold;
-    font-size: large;
+    margin-top: 5px; /* Margin above h5 elements */
+    font-weight: bold; /* Bold font for h5 elements */
+    font-size: large; /* Large font size for h5 elements */
 }
+
 h6 {
-    margin-top: 5px;
-    font-weight: bold;
-    font-size: large;
-    color: #333;
+    margin-top: 5px; /* Margin above h6 elements */
+    font-weight: bold; /* Bold font for h6 elements */
+    font-size: large; /* Large font size for h6 elements */
+    color: #333; /* Color for h6 elements */
 }
 
 ul {
-    padding-left: 20px;
+    padding-left: 20px; /* Indentation for unordered lists */
 }
 
 ul li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Space between list items */
 }
 
 /* Image Styles */
 #about img,
 #skills img,
 #experience img {
-    max-width: 50%; /* Set image width to 50% */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
+    max-width: 50%; /* Set maximum width for images */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block display for centering */
+    margin: 0 auto; /* Center images */
+    border-radius: 8px; /* Rounded corners for images */
 }
-
 
 /* Footer Styles */
 footer {
-    background: #000000;
-    color: #fff;
-    padding: 10px 20px; /* Reduced padding */
-    display: flex;
-    justify-content: space-between; /* Space between items */
+    background: #000000; /* Background color for footer */
+    color: #fff; /* Text color for footer */
+    padding: 10px 20px; /* Padding for footer */
+    display: flex; /* Use flexbox for footer layout */
+    justify-content: space-between; /* Space between footer items */
     align-items: center; /* Center items vertically */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
@@ -136,60 +140,69 @@ footer {
 footer section {
     flex: 1; /* Allow sections to take available space */
     text-align: center; /* Center text for social links */
-    justify-content: space-between;
+    justify-content: space-between; /* Space between items */
 }
 
 footer #contact {
     text-align: left; /* Align contact info to the left */
-    justify-content: space-between;
+    justify-content: space-between; /* Space between items */
 }
 
 footer #references {
     text-align: right; /* Align references to the right */
-    justify-content: space-between;
+    justify-content: space-between; /* Space between items */
 }
 
 footer h3 {
-    margin-top: 0;
+    margin-top: 0; /* Remove top margin from h3 in footer */
 }
 
 footer ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
 }
 
 footer ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Space between list items in footer */
 }
 
 footer ul li a {
-    font-weight: bold;
-    color: #00ffdd;
+    font-weight: bold; /* Bold font for footer links */
+    color: #00ffdd; /* Link color in footer */
+}
+
+footer ul a:hover {
+    background-color: rgba(0, 255, 221, 0.2); /* Example background color */
+    border-radius: 4px; /* Rounded corners on hover */
+}
+footer ul a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #fff; /* Change color on hover */
 }
 
 /* Responsive Styles */
 @media (max-width: 600px) {
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        display: block; /* Stack navigation items vertically */
+        margin: 10px 0; /* Margin for vertical spacing */
     }
 
     header {
-        padding: 15px 0;
+        padding: 15px 0; /* Reduced padding for header */
     }
 
     main {
-        padding: 15px;
+        padding: 15px; /* Reduced padding for main content */
     }
 
     footer {
-        flex-direction: column; /* Stack items vertically on small screens */
+        flex-direction: column; /* Stack footer items vertically */
         align-items: flex-start; /* Align items to the left */
     }
 
     footer section {
-        width: 100%; /* Make sections full-width */
-        text-align: left; /* Align all text to the left */
+        width: 100%; /* Make footer sections full-width */
+        text-align: left; /* Align text to the left */
     }
 
     footer #socials {
@@ -197,9 +210,9 @@ footer ul li a {
     }
 }
 
-
+/* Keyframes for caret blinking animation */
 @keyframes caret-blink {
     50% {
-        border-color: transparent; /* Blink effect */
+        border-color: transparent; /* Blink effect for cursor */
     }
 }

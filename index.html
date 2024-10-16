@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
-    <!-- Link to external stylesheet for styling -->
+    <!-- Link to external stylesheet for styling and javascript-->
     <link rel="stylesheet" href="styles.css">
+    <script src="infor.js" defer></script>
 </head>
 <body>
     <header>
         <div class="center">
-            <h1 id="typewriter"></h1>
+            <!-- Typewriter effect for the main title -->
+            <h1 id="typewriter">Wakhile Dlamini Resume</h1>
         </div>
-        <h2>Software Engineer | Artist</h2>
+        <h2>Software Engineer </h2>
         <nav>
             <ul>
                 <!-- Navigation links to different sections of the resume -->
@@ -41,7 +43,7 @@
                     images/pic-work-01_ff9qub_c_scale,w_874.jpg 874w,
                     images/ 1200w"
                 src="images/"
-                alt="">
+                alt="A picture of me">
             <p>
                 I am a goal-oriented and resourceful young man, eager to use the skills acquired in
                 my sciences and commercial studies for the benefit of the business. I am currently
@@ -80,7 +82,7 @@
                     images/skills_wy61l3_c_scale,w_380.jpg 380w,
                     images/skills_wy61l3_c_scale,w_612.jpg 612w"
                 src="images/skills_wy61l3_c_scale,w_612.jpg"
-                alt="">
+                alt="Skills overview">
             <ul>
                 <!-- List of skills -->
                 <li>Graphic Design</li>
@@ -109,11 +111,12 @@
                     images/experience_noways_c_scale,w_677.jpg 677w,
                     images/experience_noways_c_scale,w_1024.jpg 1024w"
                 src="images/experience_noways_c_scale,w_1024.jpg"
-                alt="">
+                alt="Experience overview">
             <h4>Virtual Assistant, Freelance Time Frame: April-October 2023</h4>
             <h5>Duties & Responsibilities</h5>
             <ul>
                 <!-- List of duties as a Virtual Assistant -->
+        
                 <li>Worked with various brands and people to tackle various tasks in office
                     management, social media, writing, graphic designing, and editing.</li>
                 <li>Served as a virtual assistant to a consulting company by managing a client's
@@ -186,7 +189,9 @@
             </ul>
         </section>
     </footer>
+    
     <script>
+        // Typewriter effect for the title
         const textArray = ["Wakhile Dlamini Resume!"];
         let index = 0;
         let charIndex = 0;
