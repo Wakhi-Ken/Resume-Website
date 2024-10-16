@@ -9,19 +9,23 @@
 </head>
 <body>
     <header>
-        <h1>Wakhile Dlamini Resume</h1>
+        <div class="center">
+            <h1 id="typewriter"></h1>
+        </div>
         <h2>Software Engineer</h2>
         <nav>
             <ul>
                 <!-- Navigation links to different sections of the resume -->
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#extra">Extracurricular & Leadership Experience</a>
-                <a href="#contact">Contact</a>
-                <a href="#socials">Socials</a>
-                <a href="#references">References</a>
-                <a href="#education">Education</a>
+                <li>
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#extra">Extracurricular</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#socials">Socials</a>
+                    <a href="#references">References</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -147,8 +151,8 @@
             <p>
                 I, the undersigned, hereby affirm that all the information given in this document is true and can be
                 contacted to give referees for veracity with prior arrangement.
-                <li>Wakhile Dlamini</li>
             </p>
+            <ul><li>Wakhile Dlamini</li></ul>
         </div>
     </main>
 
@@ -182,5 +186,40 @@
             </ul>
         </section>
     </footer>
+    <script>
+        const textArray = ["Wakhile Dlamini Resume!"];
+        let index = 0;
+        let charIndex = 0;
+        const typewriterElement = document.getElementById("typewriter");
+
+        function type() {
+            if (charIndex < textArray[index].length) {
+                // Add the next character to the h1
+                typewriterElement.textContent += textArray[index].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 100); // Adjust speed here (100ms)
+            } else {
+                // Wait before erasing
+                setTimeout(erase, 1000); // Wait for 1 second before starting to erase
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                // Remove the last character
+                typewriterElement.textContent = textArray[index].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, 100); // Adjust speed here (100ms)
+            } else {
+                // Move to the next text in the array
+                index = (index + 1) % textArray.length; // Loop back to the start if at the end
+                setTimeout(type, 500); // Wait before starting to type again
+            }
+        }
+
+        // Start the typewriter effect
+        type();
+    </script>
+
 </body>
 </html>
